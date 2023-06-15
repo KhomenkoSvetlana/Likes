@@ -1,7 +1,13 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val like = 100
+    var a = like % 10
+    var result = "лайк"
+    if (like % 10 === 2 || like % 10 === 3 || like % 10 === 4 || like % 10 === 5 ) {
+        result = "лайка"
+    } else if (like % 10 === 6 || like % 10 === 7 || like % 10 === 8 || like % 10 === 9 ||  like % 10 === 0) {
+        result = "лайков"
+    }
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println("У вас $like $result")
+
 }
